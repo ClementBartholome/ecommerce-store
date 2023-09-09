@@ -12,7 +12,7 @@
                 </div>
                 <div class="content">
                     <span class="text-xl text-white">jusqu'à -50%</span>
-                    <h3 class="uppercase text-white text-3xl mt-8">derniers smartphones</h3>
+                    <h3 class="uppercase text-white text-3xl mt-8">smartphones</h3>
                     <a class="w-full bg-sky-600 mt-4 rounded-lg py-2 px-4 text-2xl capitalize text-center cursor-pointer text-white inline-block" href="shop.php" class="btn">découvrir</a>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="content">
                     <span class="text-xl text-white">jusqu'à -50%</span>
-                    <h3 class="uppercase text-white text-3xl mt-8">dernières montres</h3>
+                    <h3 class="uppercase text-white text-3xl mt-8">montres</h3>
                     <a class="w-full bg-sky-600 mt-4 rounded-lg py-2 px-4 text-2xl capitalize text-center cursor-pointer text-white inline-block" href="shop.php" class="btn">découvrir</a>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="content">
                     <span class="text-xl text-white">jusqu'à -50%</span>
-                    <h3 class="uppercase text-white text-3xl mt-8">derniers casques</h3>
+                    <h3 class="uppercase text-white text-3xl mt-8">casques</h3>
                     <a class="w-full bg-sky-600 mt-4 rounded-lg py-2 px-4 text-2xl capitalize text-center cursor-pointer text-white inline-block" href="shop.php" class="btn">découvrir</a>
                 </div>
             </div>
@@ -48,18 +48,27 @@
     </div>
 
     <section class="m-auto max-w-3xl">
-        <h2>Produits :</h2>
+        <h2 class="text-5xl mb-8 uppercase text-center mt-6 font-semibold">Derniers Produits</h2>
+
+        <div class="swiper products-slider">
+
+        <div class="swiper-wrapper">
+
             <?php foreach ($products as $product) : ?>
-                <div>
-                    <a href="index.php?page=product&id=<?= $product['id'] ?>">
-                        <img src=./uploaded_images/<?= $product['image_1'] ?> alt="<?= $product['name'] ?>">
-                        <img src=./uploaded_images/<?= $product['image_2'] ?> alt="<?= $product['name'] ?>">
-                        <img src=./uploaded_images/<?= $product['image_3'] ?> alt="<?= $product['name'] ?>">
+                <div class="swiper-slide slide p-4 rounded-lg border-black border-2 bg-white shadow mb-16 max-h-60 ">
+                    <a class="flex flex-col items-center gap-2 text-center" href="index.php?page=product&id=<?= $product['id'] ?>">
+                        <img class="max-h-28" src=./uploaded_images/<?= $product['image_1'] ?> alt="<?= $product['name'] ?>">
                         <h3><?= $product['name'] ?></h4>
                         <p><?= number_format($product['price'], 2, ',', ' ') ?> €</p>
+                        <button>Ajouter au panier</button>
                     </a>
                 </div>
             <?php endforeach; ?>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+        </div>
     </section>
 </main>
 
