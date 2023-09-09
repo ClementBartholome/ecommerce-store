@@ -1,4 +1,4 @@
-<main >
+<main class="bg-gray-200" >
     <div class="bg-orange-600">
         <section class="m-auto max-w-3xl p-8">
 
