@@ -59,9 +59,13 @@
                     <a class="flex flex-col items-center gap-2 text-center" href="index.php?page=product&id=<?= $product['id'] ?>">
                         <img class="max-h-28" src=./uploaded_images/<?= $product['image_1'] ?> alt="<?= $product['name'] ?>">
                         <h3><?= $product['name'] ?></h4>
-                        <p><?= number_format($product['price'], 2, ',', ' ') ?> €</p>
-                        <button>Ajouter au panier</button>
                     </a>
+                    <div class="flex justify-between	">
+                        <p><?= number_format($product['price'], 2, ',', ' ') ?> €</p>
+                        <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+                        </div>
+                        <button class="w-full py-2 px-4 bg-sky-600 rounded-lg text-white">Ajouter au panier</button>
+                    
                 </div>
             <?php endforeach; ?>
 
