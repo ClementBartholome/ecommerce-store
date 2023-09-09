@@ -1,47 +1,41 @@
 <main >
-    <div class="bg-amber-600">
+    <div class="bg-orange-600">
         <section class="m-auto max-w-3xl p-8">
 
             <div class="swiper home-slider">
 
-            <div class="swiper-wrapper">
-
-            <!-- display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    padding-bottom: 6rem;-->
+            <div class="swiper-wrapper max-h-96">
 
             <div class="swiper-slide slide flex items-center flex-wrap gap-6 pb-24">
                 <div class="image">
-                    <img src="images/home-img-1.png" alt="">
+                    <img class="h-80" src="images/home-img-1.png" alt="">
                 </div>
                 <div class="content">
-                    <span>jusqu'à -50%</span>
-                    <h3>derniers smartphones</h3>
-                    <a href="shop.php" class="btn">découvrir</a>
+                    <span class="text-xl text-white">jusqu'à -50%</span>
+                    <h3 class="uppercase text-white text-3xl mt-8">derniers smartphones</h3>
+                    <a class="w-full bg-sky-600 mt-4 rounded-lg py-2 px-4 text-2xl capitalize text-center cursor-pointer text-white inline-block" href="shop.php" class="btn">découvrir</a>
                 </div>
             </div>
 
             <div class="swiper-slide slide flex items-center flex-wrap gap-6 pb-24">
                 <div class="image">
-                    <img src="images/home-img-2.png" alt="">
+                    <img class="h-80" src="images/home-img-2.png" alt="">
                 </div>
                 <div class="content">
-                    <span>jusqu'à -50%</span>
-                    <h3>dernières montres</h3>
-                    <a href="shop.php" class="btn">découvrir</a>
+                    <span class="text-xl text-white">jusqu'à -50%</span>
+                    <h3 class="uppercase text-white text-3xl mt-8">dernières montres</h3>
+                    <a class="w-full bg-sky-600 mt-4 rounded-lg py-2 px-4 text-2xl capitalize text-center cursor-pointer text-white inline-block" href="shop.php" class="btn">découvrir</a>
                 </div>
             </div>
 
             <div class="swiper-slide slide flex items-center flex-wrap gap-6 pb-24">
                 <div class="image">
-                    <img src="images/home-img-3.png" alt="">
+                    <img class="h-80" src="images/home-img-3.png" alt="">
                 </div>
                 <div class="content">
-                    <span>jusqu'à -50%</span>
-                    <h3>derniers casques</h3>
-                    <a href="shop.php" class="btn">découvrir</a>
+                    <span class="text-xl text-white">jusqu'à -50%</span>
+                    <h3 class="uppercase text-white text-3xl mt-8">derniers casques</h3>
+                    <a class="w-full bg-sky-600 mt-4 rounded-lg py-2 px-4 text-2xl capitalize text-center cursor-pointer text-white inline-block" href="shop.php" class="btn">découvrir</a>
                 </div>
             </div>
 
