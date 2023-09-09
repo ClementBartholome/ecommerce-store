@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body class="m-0 p-0 border-none outline-none no-underline box-border">
-        <header class="sticky left-0 top-0 right-0 shadow-md">
+        <header class="sticky left-0 top-0 right-0 shadow-md bg-white z-10">
             <section class="flex p-8 items-center justify-between max-w-5xl m-auto">
                 <a href="index.php" class="text-3xl">Shopie<span class="text-blue-500">.</span></a>
                 <nav class="text-xl">
