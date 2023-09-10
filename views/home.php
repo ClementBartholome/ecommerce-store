@@ -47,7 +47,63 @@
         </section>
     </div>
 
-    <section class="m-auto max-w-3xl">
+    <section class="m-auto max-w-4xl">
+
+        <h1 class="text-5xl mb-8 uppercase text-center mt-6 font-semibold">parcourir par catégorie</h1>
+
+        <div class="swiper category-slider">
+
+        <div class="swiper-wrapper">
+
+        <a href="category.php?category=laptop" class="w-fit flex flex-col items-center 	 swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+            <img src="images/icon-1.png" alt="">
+            <h3 class="text-2xl font-normal	">ordi portable</h3>
+        </a>
+
+        <a href="category.php?category=tv" class="w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+            <img src="images/icon-2.png" alt="">
+            <h3 class="text-2xl font-normal	">tv</h3>
+        </a>
+
+        <a href="category.php?category=camera" class="w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+            <img src="images/icon-3.png" alt="">
+            <h3 class="text-2xl font-normal	">appareil photo</h3>
+        </a>
+
+        <a href="category.php?category=mouse" class="w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+            <img src="images/icon-4.png" alt="">
+            <h3 class="text-2xl font-normal	">souris</h3>
+        </a>
+
+        <a href="category.php?category=fridge" class="w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+            <img src="images/icon-5.png" alt="">
+            <h3 class="text-2xl font-normal	">frigo</h3>
+        </a>
+
+        <a href="category.php?category=washing" class="w-fit flex flex-col items-center 		swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+            <img src="images/icon-6.png" alt="">
+            <h3 class="text-2xl font-normal	">machine à laver</h3>
+        </a>
+
+        <a href="category.php?category=smartphone" class="w-fit flex flex-col items-center 		swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+            <img src="images/icon-7.png" alt="">
+            <h3 class="text-2xl font-normal	">smartphone</h3>
+        </a>
+
+        <a href="category.php?category=watch" class="w-fit flex flex-col items-center 		swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+            <img src="images/icon-8.png" alt="">
+            <h3 class="text-2xl font-normal	">montre</h3>
+        </a>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <section class="m-auto max-w-4xl">
         <h2 class="text-5xl mb-8 uppercase text-center mt-6 font-semibold">Derniers Produits</h2>
 
         <div class="swiper products-slider">
@@ -55,14 +111,14 @@
         <div class="swiper-wrapper">
 
             <?php foreach ($products as $product) : ?>
-                <div class="swiper-slide slide p-4 rounded-lg border-black border-2 bg-white shadow mb-16 max-h-60 ">
+                <div class="swiper-slide slide w-fit	p-4 rounded-lg border-black border-2 bg-white shadow mb-16 max-h-80 ">
                     <a class="flex flex-col items-center gap-2 text-center" href="index.php?page=product&id=<?= $product['id'] ?>">
-                        <img class="max-h-28" src=./uploaded_images/<?= $product['image_1'] ?> alt="<?= $product['name'] ?>">
+                        <img class="max-h-40" src=./uploaded_images/<?= $product['image_1'] ?> alt="<?= $product['name'] ?>">
                         <h3><?= $product['name'] ?></h4>
                     </a>
-                    <div class="flex justify-between	">
+                    <div class="flex justify-between mb-2	">
                         <p><?= number_format($product['price'], 2, ',', ' ') ?> €</p>
-                        <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+                        <input class="border-black border-2 rounded" type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
                         </div>
                         <button class="w-full py-2 px-4 bg-sky-600 rounded-lg text-white">Ajouter au panier</button>
                     
@@ -109,7 +165,7 @@ var swiper = new Swiper(".home-slider", {
         slidesPerView: 4,
       },
       1024: {
-        slidesPerView: 5,
+        slidesPerView: 'auto',
       },
    },
 });
@@ -129,7 +185,7 @@ var swiper = new Swiper(".products-slider", {
         slidesPerView: 2,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 'auto',
       },
    },
 });
