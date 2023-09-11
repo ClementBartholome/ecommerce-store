@@ -28,6 +28,10 @@
             <span class="text-xl">détails (requis)</span>
             <textarea name="details" placeholder="Détails du produit" class="text-xl w-full bg-slate-200 p-6 mt-6 h-20 resize-none" required maxlength="500" cols="20" rows="5"></textarea>
          </div>
+         <div class="flex-1 basis-96">
+            <span class="text-xl">catégorie (requis)</span>
+            <input type="text" name="category" placeholder="Catégore du produit" class="text-xl w-full bg-slate-200 p-6 mt-6 h-20 resize-none mb-6" required maxlength="500" cols="20" rows="5"></input>
+         </div>
       </div>
       
       <input type="submit" value="Ajouter le produit" class="w-full text-2xl py-4 px-12 bg-sky-600 rounded-lg text-white" name="add product">

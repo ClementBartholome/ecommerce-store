@@ -16,9 +16,21 @@ class ProductController {
         $this->renderView('admin', []);
     }
 
-    public function addProduct($name, $details, $price, $image_1, $image_2, $image_3) {
+    public function addProduct($name, $details, $price, $image_1, $image_2, $image_3, $category) {
         $productModel = new ProductModel();
-        $productModel->addProduct($name, $details, $price, $image_1, $image_2, $image_3);
+        $productModel->addProduct($name, $details, $price, $image_1, $image_2, $image_3, $category);
+    }
+
+    public function getProductById($id) {
+        $productModel = new ProductModel();
+        $product = $productModel->getById($id);
+        $this->renderView('quick_view', ['product' => $product]);
+    }
+
+    public function getProductsByCategory($categoryName) {
+        $productModel = new ProductModel();
+        $products = $productModel->getByCategory($categoryName);
+        $this->renderView('category', ['products' => $products, 'categoryName' => $categoryName]);
     }
 
     private function renderView($viewName, $data = []) {

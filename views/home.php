@@ -55,42 +55,42 @@
 
         <div class="swiper-wrapper">
 
-        <a href="category.php?category=laptop" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center  swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+        <a href="index.php?action=category&category=ordinateur" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center  swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
             <img class="group-hover:invert" src="images/icon-1.png" alt="">
             <h3 class="text-2xl font-normal	">ordi portable</h3>
         </a>
 
-        <a href="category.php?category=tv" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+        <a href="index.php?action=category&category=tv" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
             <img class="group-hover:invert" src="images/icon-2.png" alt="">
             <h3 class="text-2xl font-normal	">tv</h3>
         </a>
 
-        <a href="category.php?category=camera" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+        <a href="index.php?action=category&category=camera" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
             <img class="group-hover:invert" src="images/icon-3.png" alt="">
             <h3 class="text-2xl font-normal	">appareil photo</h3>
         </a>
 
-        <a href="category.php?category=mouse" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+        <a href="index.php?action=category&category=mouse" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
             <img class="group-hover:invert" src="images/icon-4.png" alt="">
             <h3 class="text-2xl font-normal	">souris</h3>
         </a>
 
-        <a href="category.php?category=fridge" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+        <a href="index.php?action=category&category=fridge" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
             <img class="group-hover:invert" src="images/icon-5.png" alt="">
             <h3 class="text-2xl font-normal	">frigo</h3>
         </a>
 
-        <a href="category.php?category=washing" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+        <a href="index.php?action=category&category=washing" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
             <img class="group-hover:invert" src="images/icon-6.png" alt="">
             <h3 class="text-2xl font-normal	">machine à laver</h3>
         </a>
 
-        <a href="category.php?category=smartphone" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+        <a href="index.php?action=category&category=smartphone" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
             <img class="group-hover:invert" src="images/icon-7.png" alt="">
             <h3 class="text-2xl font-normal	">smartphone</h3>
         </a>
 
-        <a href="category.php?category=watch" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+        <a href="index.php?action=category&category=watch" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
             <img class="group-hover:invert" src="images/icon-8.png" alt="">
             <h3 class="text-2xl font-normal	">montre</h3>
         </a>
@@ -111,9 +111,13 @@
         <div class="swiper-wrapper">
 
             <?php foreach ($products as $product) : ?>
-                <div class="swiper-slide slide w-fit	p-4 rounded-lg border-black border-2 bg-white shadow mb-16 max-h-80 ">
-                    <a class="flex flex-col items-center gap-2 text-center" href="index.php?page=product&id=<?= $product['id'] ?>">
-                        <img class="max-h-40" src=./uploaded_images/<?= $product['image_1'] ?> alt="<?= $product['name'] ?>">
+                <div class="swiper-slide slide w-fit	p-4 rounded-lg border-black border-2 bg-white shadow mb-16 max-h-[22rem] ">
+                    <a class="flex flex-col items-center gap-2 text-center" href="index.php?action=product&id=<?= $product['id'] ?>">
+                        <div class="flex justify-between mb-2 ">
+                            <button class="fas fa-heart border-black border-2 p-2 rounded-lg hover:bg-gray-800 hover:text-white" type="submit" name="add_to_wishlist"></button>
+                            <a href="index.php?action=product&id=<?= $product['id'] ?>" class="fas fa-eye border-black border-2 p-2 rounded-lg hover:bg-gray-800 hover:text-white"></a>
+                        </div>
+                        <img class="m-auto max-h-40" src=./uploaded_images/<?= $product['image_1'] ?> alt="<?= $product['name'] ?>">
                         <h3><?= $product['name'] ?></h4>
                     </a>
                     <div class="flex justify-between mb-2	">
