@@ -4,16 +4,18 @@
 
     <h1 class="heading text-5xl mb-8 uppercase text-center mt-6 font-semibold"><?= $categoryName ?></h1>
 
-    <div class="box-container flex gap-8">
+    <div class="box-container flex gap-8 flex-wrap">
 
     <?php foreach ($products as $product) : ?>
-        <form action="" method="post" class="box p-8 rounded border-black border-2 shadow-md mt-6 bg-white">
+        <form action="" method="post" class="box w-80 flex flex-col gap-2 p-8 rounded border-black border-2 shadow-md mt-6 bg-white">
             <input type="hidden" name="pid" value="<?= $product['id']; ?>">
             <input type="hidden" name="name" value="<?= $product['name']; ?>">
             <input type="hidden" name="price" value="<?= $product['price']; ?>">
             <input type="hidden" name="image" value="<?= $product['image_1']; ?>">
-            <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
-            <a href="quick_view.php?pid=<?= $product['id']; ?>" class="fas fa-eye"></a>
+            <div class="flex justify-between mb-2 ">
+                <button class="fas fa-heart fas fa-heart border-black border-2 p-2 rounded-lg hover:bg-gray-800 hover:text-white" type="submit" name="add_to_wishlist"></button>
+                <a href="index.php?action=product&id=<?= $product['id'] ?>" class="fas fa-eye border-black border-2 p-2 rounded-lg hover:bg-gray-800 hover:text-white"></a>
+            </div>
             <img class="h-72 w-full object-contain" src=./uploaded_images/<?= $product['image_1'] ?> alt="<?= $product['name'] ?>">
             <div class="name"><?= $product['name']; ?></div>
             <div class="flex justify-between">
