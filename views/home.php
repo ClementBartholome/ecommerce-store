@@ -65,22 +65,22 @@
             <h3 class="text-2xl font-normal	">tv</h3>
         </a>
 
-        <a href="index.php?action=category&category=camera" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+        <a href="index.php?action=category&category=appareil-photo" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
             <img class="group-hover:invert" src="images/icon-3.png" alt="">
             <h3 class="text-2xl font-normal	">appareil photo</h3>
         </a>
 
-        <a href="index.php?action=category&category=mouse" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+        <a href="index.php?action=category&category=souris" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
             <img class="group-hover:invert" src="images/icon-4.png" alt="">
             <h3 class="text-2xl font-normal	">souris</h3>
         </a>
 
-        <a href="index.php?action=category&category=fridge" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+        <a href="index.php?action=category&category=frigo" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		 swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
             <img class="group-hover:invert" src="images/icon-5.png" alt="">
             <h3 class="text-2xl font-normal	">frigo</h3>
         </a>
 
-        <a href="index.php?action=category&category=washing" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+        <a href="index.php?action=category&category=lave-linge" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
             <img class="group-hover:invert" src="images/icon-6.png" alt="">
             <h3 class="text-2xl font-normal	">machine à laver</h3>
         </a>
@@ -90,7 +90,7 @@
             <h3 class="text-2xl font-normal	">smartphone</h3>
         </a>
 
-        <a href="index.php?action=category&category=watch" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
+        <a href="index.php?action=category&category=montre" class="group hover:bg-gray-800 hover:text-white w-fit flex flex-col items-center 		swiper-slide slide swiper-slide slide mb-20 shadow-md border-black border-2 text-center p-8 rounded-lg bg-white">
             <img class="group-hover:invert" src="images/icon-8.png" alt="">
             <h3 class="text-2xl font-normal	">montre</h3>
         </a>
@@ -111,7 +111,7 @@
         <div class="swiper-wrapper">
 
             <?php foreach ($products as $product) : ?>
-                <div class="swiper-slide slide w-fit	p-4 rounded-lg border-black border-2 bg-white shadow mb-16 max-h-[22rem] ">
+                <div class="swiper-slide slide w-80		p-4 rounded-lg border-black border-2 bg-white shadow mb-16 max-h-[22rem] ">
                     <a class="flex flex-col items-center gap-2 text-center" href="index.php?action=product&id=<?= $product['id'] ?>">
                         <div class="flex justify-between mb-2 ">
                             <button class="fas fa-heart border-black border-2 p-2 rounded-lg hover:bg-gray-800 hover:text-white" type="submit" name="add_to_wishlist"></button>
